@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .invoice-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .header p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .e-invoice {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  
+  .seller-info, .consignee-info, .buyer-info, .invoice-details {
+    margin-bottom: 20px;
+  }
+  
+  .seller-info h2, .consignee-info h2, .buyer-info h2 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+  }
+  
+  .items-table, .tax-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .items-table th, .items-table td, .tax-table th, .tax-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .items-table th, .tax-table th {
+    background-color: #f1f1f1;
+  }
+  
+  .totals {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .totals p {
+    margin: 5px 0;
+  }
+  
+  .amount-in-words {
+    margin-bottom: 20px;
+  }
+  
+  .footer {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+  }
+  
+  .footer ol {
+    margin: 5px 0;
+    padding-left: 20px;
+  }

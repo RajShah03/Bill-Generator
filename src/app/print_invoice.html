@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax Invoice</title>
+  <link rel="stylesheet" href="invoice-template.css">
+</head>
+<body>
+  <div class="invoice-container">
+    <!-- Header Section -->
+    <div class="header">
+      <h1>TAX INVOICE</h1>
+      <p>(ORIGINAL FOR RECIPIENT)</p>
+    </div>
+
+    <!-- Seller Information -->
+    <div class="seller-info">
+      <h2>N R JEWELLERS</h2>
+      <p>105, Swastik Arcade, 1st Floor, Parsi Sheri, Bhagal, Surat.</p>
+      <p>Pan No: <span id="sellerPan">AANFN7824L</span></p>
+      <p>E-Mail: <span id="sellerEmail">njewellers999@yahoo.com</span></p>
+      <p>GSTIN/UIN: <span id="sellerGstin">24AANFN7824L12R</span></p>
+      <p>State Name: Gujarat, Code: 24</p>
+    </div>
+
+    <!-- Consignee Information -->
+    <div class="consignee-info">
+      <h2>Consignee (Ship to)</h2>
+      <p>Raj Jewellers</p>
+      <p>10/713, 101, Vrajbhumi Apt., Hawadia Chakla, Ambaji Road, Surat</p>
+      <p>GSTIN/UIN: <span id="consigneeGstin">24AQEPS2959J12F</span></p>
+      <p>PAN/T No: <span id="consigneePan">AQEPS2959J</span></p>
+      <p>State Name: Gujarat, Code: 24</p>
+    </div>
+
+    <!-- Buyer Information -->
+    <div class="buyer-info">
+      <h2>Buyer (Bill to)</h2>
+      <p>Raj Jewellers</p>
+      <p>10/713, 101, Vrajbhumi Apt., Hawadia Chakla, Ambaji Road, Surat</p>
+      <p>GSTIN/UIN: <span id="buyerGstin">24AQEPS2959J12F</span></p>
+      <p>PAN/T No: <span id="buyerPan">AQEPS2959J</span></p>
+      <p>State Name: Gujarat, Code: 24</p>
+    </div>
+
+    <!-- Invoice Details -->
+    <div class="invoice-details">
+      <p>Invoice No.: <span id="invoiceNo">4392</span></p>
+      <p>Date: <span id="invoiceDate">2-Dec-24</span></p>
+    </div>
+
+    <!-- Items Table -->
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>Description of Goods</th>
+          <th>HSN/SAC</th>
+          <th>HSN Code</th>
+          <th>Quantity</th>
+          <th>Rate per</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>GOLD BAR (999)</td>
+          <td>ACM0748</td>
+          <td>71081200</td>
+          <td>100.000 gms</td>
+          <td>7,596.18</td>
+          <td>7,59,618.45</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Totals Section -->
+    <div class="totals">
+      <p>Total: <span id="totalAmount">7,83,190.00</span></p>
+      <p>CGST (1.5%): <span id="cgst">11,394.28</span></p>
+      <p>SGST (1.5%): <span id="sgst">11,394.28</span></p>
+      <p>Grand Total: <span id="grandTotal">7,83,190.00</span></p>
+    </div>
+
+    <!-- Amount in Words -->
+    <div class="amount-in-words">
+      <p>Amount Chargeable (in words): <span id="amountInWords">INR Seven Lakh Eighty Three Thousand One Hundred Ninety Only</span></p>
+    </div>
+
+    <!-- Tax Details -->
+    <table class="tax-table">
+      <thead>
+        <tr>
+          <th>Taxable Value</th>
+          <th>Central Tax</th>
+          <th>State Tax</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>7,59,618.45</td>
+          <td>1.50%</td>
+          <td>11,394.28</td>
+          <td>1.50%</td>
+          <td>11,394.28</td>
+          <td>22,788.56</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <p>Company’s PAN: <span id="companyPan">AANFN7824L</span></p>
+      <p>Declaration:</p>
+      <ol>
+        <li>GOODS PURCHASED AND KEPT OUR PREMISES AND SENDING AT THE CUSTOMER’S RISK.</li>
+        <li>NO CLAIM FOR SHORTAGE AND PURITY AGAINST</li>
+        <li>GOODS ONCE SOLD CAN NOT BE TAKEN BACK.</li>
+        <li>PLEASE CONFIRM YOUR GST AND PAN NUMBER.</li>
+        <li>NO CLAIM ABOUT INCORRECT GST NUMBER AFTER</li>
+      </ol>
+      <p>Company’s Bank Details:</p>
+      <p>Account Holder Name: N R JEWELLERS</p>
+      <p>Bank Name: ICICI BANK LTD</p>
+      <p>A/c No.: 777705928999</p>
+      <p>Branch & IFSC Code: RING ROAD & ICIC0006246</p>
+      <p>SWIFT Code: ICICINBBXXX</p>
+      <p>Customer’s Seal and Signature</p>
+      <p>for N R JEWELLERS</p>
+      <p>Authorised Signatory</p>
+      <p>This is a Computer Generated Invoice</p>
+    </div>
+  </div>
+
+  <script src="invoice-template.js"></script>
+</body>
+</html>
